@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178233202862",
+    "firebase_url": "https://crossbar-c8fa3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "crossbar-c8fa3",
+    "storage_bucket": "crossbar-c8fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178233202862:android:157bb9e150da3f5a3db53f",
+        "android_client_info": {
+          "package_name": "com.talent.crossbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178233202862-um5a9tuf3tqel77kf71kunenhloic799.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.talent.crossbar",
+            "certificate_hash": "147b13e4d037f477859bfbeb673b796cbaac6cfb"
+          }
+        },
+        {
+          "client_id": "178233202862-em44010f3m5jrv8ch4h8q3lgp0ccbob6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByagsnUGAvT3_onRXnIgn_QPqDd3Ta0Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178233202862-em44010f3m5jrv8ch4h8q3lgp0ccbob6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

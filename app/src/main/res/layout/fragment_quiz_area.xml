@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.QuizAreaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            android:id="@+id/quiz_layout"
+            android:layout_margin="12dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            layout="@layout/quiz_question_item"/>
+
+
+        <ImageView
+            android:id="@+id/quiz_svg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_thinking"
+            />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/answer_correct_animation"
+            android:layout_width="match_parent"
+            android:translationZ="2dp"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/correct"
+            android:visibility="gone"
+            app:lottie_autoPlay="false"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/answer_wrong_animation"
+            android:layout_width="match_parent"
+            android:translationZ="2dp"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/wrong"
+            android:visibility="gone"
+            app:lottie_autoPlay="false"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>

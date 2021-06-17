@@ -1,0 +1,55 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actvities.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/transparentlogo"
+        android:transitionName="logo transition"
+        app:layout_constraintBottom_toTopOf="@id/splash_company"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splash_company"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:gravity="center_horizontal"
+        android:text="CrossBar Talent Management"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/montserrat"
+        android:transitionName="logo transition"
+        app:layout_constraintTop_toBottomOf="@+id/splash_logo"
+        app:layout_constraintBottom_toTopOf="@id/splash_motto"
+        />
+
+    <TextView
+        android:id="@+id/splash_motto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_company"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:text="Resources Optimised"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/splash_company"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

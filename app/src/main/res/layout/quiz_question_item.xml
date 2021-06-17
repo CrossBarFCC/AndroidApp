@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="8dp"
+    android:padding="8dp"
+    app:cardCornerRadius="5dp"
+    tools:context=".fragments.QuizAreaFragment"
+    android:id="@+id/question_cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/question_box"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/question_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:text=" 10:43"
+            app:drawableLeftCompat="@drawable/ic_baseline_timer_24"
+            android:textColor="#39B479"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/question_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Please wait while the question is loading"
+            android:layout_marginHorizontal="3dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/question_timer"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_options"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/question_Text">
+
+            <RadioButton
+                android:id="@+id/option_1"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                />
+
+            <RadioButton
+                android:id="@+id/option_2"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                />
+
+            <RadioButton
+                android:id="@+id/option_3"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                />
+
+            <RadioButton
+                android:id="@+id/option_4"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/quiz_submit"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/radio_options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="SUBMIT"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/quiz_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="4dp"
+        android:visibility="visible"
+        android:text="Waiting for next question..."
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+
+</androidx.cardview.widget.CardView>
